@@ -1,0 +1,61 @@
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[window]
+opacity = 0.9
+title = "JosemiGT Terminal"
+padding = { x = 3, y = 3 }
+dynamic_padding = true
+
+[keyboard]
+bindings = [
+  { key="C",         mods="Control|Shift", action="Copy"                        },
+  { key="V",         mods="Control|Shift", action="Paste"                       },
+  { key="Copy",      mods="None",          action="Copy"                        },
+  { key="Paste",     mods="None",          action="Paste"                       },
+  { key="Insert",    mods="Shift",         action="PasteSelection"              },
+  { key="Key0",      mods="Control",       action="ResetFontSize"               },
+  { key="T",         mods="Control|Shift", action="CreateNewWindow"             },
+  { key="Equals",    mods="Control",       action="IncreaseFontSize"            },
+  { key="Plus",      mods="Control",       action="IncreaseFontSize"            },
+  { key="Minus",     mods="Control",       action="DecreaseFontSize"            },
+  { key="F11",       mods="None",          action="ToggleFullscreen"            },
+  { key="L",         mods="Control",       action="ClearLogNotice"              },
+  { key="PageUp",    mods="None",          action="ScrollPageUp",   mode= "Alt" },
+  { key="PageDown",  mods="None",          action="ScrollPageDown", mode= "Alt" },
+  { key="Home",      mods="Shift",         action="ScrollToTop",    mode= "Alt" },
+  { key="End",       mods="Shift",         action="ScrollToBottom", mode= "Alt" }
+]
+
+[font]
+glyph_offset = { x = 5, y = 0 }
+
+# Default colors
+[colors.primary]
+background = '#1e1e1e'
+foreground = '#ffffff'
+
+# Normal colors
+[colors.normal]
+black      = '#171421'
+red        = '#c01c28'
+green      = '#26a269'
+yellow     = '#a2734c'
+blue       = '#12488b'
+magenta    = '#a347ba'
+cyan       = '#2aa1b3'
+white      = '#d0cfcc'
+
+# Bright colors
+[colors.bright]
+black      = '#5e5c64'
+red        = '#f66151'
+green      = '#33d17a'
+yellow     = '#e9ad0c'
+blue       = '#2a7bde'
+magenta    = '#c061cb'
+cyan       = '#33c7de'
+white      = '#ffffff'
+
+[terminal]

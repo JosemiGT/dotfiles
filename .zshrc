@@ -5,7 +5,6 @@
 # - Tema: Powerlevel10k
 # - Plugins: git, zsh-autosuggestions, zsh-syntax-highlighting
 # - Alias personalizados y variables de entorno
-# - Modularización: se cargan archivos extra desde ~/.config/zsh/
 # --------------------------------------------------------------
 # Autor: JosemiGT
 # ==============================================================
@@ -28,7 +27,7 @@ source $ZSH/oh-my-zsh.sh
 # ===============================
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE="$ZDOTDIR/.zsh_history"
+HISTFILE=".zsh_history"
 setopt appendhistory
 setopt sharehistory
 setopt histignoredups
@@ -47,12 +46,6 @@ zstyle ':completion:*' menu select
 export LANG=es_ES.UTF-8
 export EDITOR=helix
 export LESS=-R
-
-# Aliases
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ziplife="$HOME/life/zip-life.sh"
-alias unziplife="$HOME/life/unzip-life.sh"
-[ -f ~/.zsh_aliases ] && source ~/.zsh_aliases
 
 # Node & FNM
 export PATH="$HOME/.local/share/fnm:$PATH"
@@ -76,7 +69,7 @@ if command -v brew &>/dev/null; then
 fi
 
 # ===============================
-# Alias
+# Aliases
 # ===============================
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ziplife="$HOME/life/zip-life.sh"

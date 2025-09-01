@@ -1,0 +1,43 @@
+* {
+    font-family: 'Cascadia Code NF';
+    font-size: 15px;
+    font-weight: 600;
+    color: #E6F1FF;
+}
+
+#window {
+  margin: 0px;
+  border: 0.0px solid;
+  border-radius: 10px;
+  background-color: #0B1E38;
+  opacity: 0.9;
+}
+
+#input {
+  margin: 15px;
+  border-radius: 25px;
+  border: 2px solid #7DAFFF;
+  background-color: #1b263b;
+}
+
+#entry {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+#entry > box {
+    margin-left: 16px;
+}
+
+#entry image {
+    padding-right: 10px;
+}
+
+#entry:selected {
+  background-color: #7DAFFF;
+}
+
+#scroll {
+  background-color: transparent;
+}

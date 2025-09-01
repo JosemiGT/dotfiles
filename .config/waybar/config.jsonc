@@ -1,7 +1,7 @@
 {
 	"layer": "top",
 	"position": "top",
-	"margin": "0 0 0",
+	"margin": "0 5",
     "fixed center": true,
     "reload_style_on_change": true,
     "include": [
@@ -9,15 +9,21 @@
     ],
 
 	"modules-left": [
-        "hyprland/workspaces"
+        "custom/archlogo",
+        "custom/sep",
+        "hyprland/workspaces",
+        "custom/sep",
+        "idle_inhibitor"
     ],
     
 	"modules-center": [
-        "idle_inhibitor"
+        "hyprland/window"
     ],
     
 	"modules-right": [
         "tray",
+        "custom/sep",
+        "network",
         "custom/sep",
         "pulseaudio",
         "custom/sep",

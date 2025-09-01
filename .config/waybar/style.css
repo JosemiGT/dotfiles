@@ -1,43 +1,20 @@
 * {
     border: none;
-    font-family: "Cascadia Code, Roboto, Helvetica, Arial, sans-serif";
+    font-family: "Cascadia Code NF, Roboto, Helvetica, Arial, sans-serif";
     font-weight: bold;
     font-size: 15px;
     min-height: 10px;
-}
-
-#waybar {
-    background: transparent;
-}
-
-#workspaces button {
-    background-color: #b3e6d9;
-    color: #ffffff;
-    padding: 4px 4px;
-    border-radius: 16px;
-    margin: 0 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-#workspaces button:hover {
-    background: #7dc5d4;
-    min-width: 50px;
-}
-
-#workspaces button.focused {
-    background-color: #4060bf;
-}
-
-#workspaces button.urgent {
-    background-color: #9a7dd4;
-}
-
-#workspaces button.active {
-    background-color: #4060bf;
-    min-width: 50px;
+    color: #E6F1FF;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    text-shadow: none;
+    background-color: transparent;
+    border-radius: 6px;
 }
 
 #clock,
+#network,
 #battery,
 #cpu,
 #memory,
@@ -46,14 +23,73 @@
 #mode,
 #idle_inhibitor,
 #window,
+#workspaces,
+#custom-archlogo {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+}
+
+#custom-archlogo {
+  font-size: 25px;
+  background-color: #7DAFFF;
+  padding: 0px 5px;
+
+}
+
 #workspaces {
-    margin: 0 5px;
+  background-color: #12385C;
+  padding: 0px 3px;
+  opacity: 1;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+#workspaces button {
+    background-color: #3EC6C3;
+    padding: 0px 3px;
+    margin: 3px;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+#workspaces button:hover {
+    background: #8BA1E2;
+    opacity: 1;
+    animation: none;
+}
+
+#workspaces button.focused {
+    background-color: #7DAFFF;
+}
+
+#workspaces button.urgent {
+    background-color: #FFD66B;
+}
+
+#workspaces button.active {
+    background-color: #7DAFFF;
+    min-width: 20px;
+    opacity: 1;
+}
+
+#window {
+    background-color: #12385C;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px;
+    border-radius: 6px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
 }
 
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
 }
-
 
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
@@ -86,18 +122,20 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #9a7dd4;
+    background-color: #FFD66B;
 }
 
 #idle_inhibitor {
-    font-size: 15px;
-    background-color: #d9b3e6;
-    color: black;
-    padding: 5px;
-    border-radius: 16px;
+    font-size: 20px;
+    background-color: #7DAFFF;
+    padding: 0px 5px;
+    margin: 3px;
+    border-radius: 6px;
+    border: none;
+    opacity: 0.8;
 }
 
 #idle_inhibitor.activated {
-    background-color: #4060bf;
-    color: white;
+    background-color: #FFD66B;
+    color: #0B1E38;
 }

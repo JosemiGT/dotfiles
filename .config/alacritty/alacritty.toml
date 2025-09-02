@@ -1,12 +1,13 @@
-[terminal.shell]
-program = "/bin/zsh"
-args = ["-l"]
+[terminal]
+osc52= "CopyPaste"
+shell = { program = "/bin/zsh", args = ["-l"]}
 
 [window]
-opacity = 0.9
 title = "JosemiGT Terminal"
-padding = { x = 3, y = 3 }
+opacity = 0.9
+padding = { x = 5, y = 5 }
 dynamic_padding = true
+blur = true
 
 [keyboard]
 bindings = [
@@ -30,6 +31,11 @@ bindings = [
 
 [font]
 glyph_offset = { x = 5, y = 0 }
+normal = { family = "Cascadia Code NF", style = "Regular"} 
+bold = { style = "Bold"} 
+italic = { style = "Italic"} 
+bold_italic = { style = "Bold Italic"} 
+size = 12
 
 # Default colors
 [colors.primary]
@@ -58,4 +64,3 @@ magenta    = '#c061cb'
 cyan       = '#33c7de'
 white      = '#ffffff'
 
-[terminal]

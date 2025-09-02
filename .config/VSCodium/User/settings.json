@@ -1,0 +1,5 @@
+{
+    "git.autofetch": true,
+    "editor.fontFamily": "'Cascadia Code NF', 'Cascadia Code PL', 'Cascadia Mono', 'Droid Sans Mono', 'monospace'",
+    "workbench.iconTheme": "material-icon-theme"
+}

@@ -27,7 +27,7 @@
     },
 
 	"clock": {
-		"format": "{:%d/%m %H:%M }",
+		"format": "{:%d/%m %H:%M}",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"on-click": "swaync-client -t",
 		"calendar": {
@@ -63,7 +63,8 @@
         "format-icons": { 
             "default": ["\uf026", "\uf027", "\uf028"] 
         },
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
     },
 
     "custom/sep" : {
@@ -81,5 +82,10 @@
 		"format-linked": "{ifname} (No IP)",
 		"format-disconnected": "󰖪",
         "tooltip-format":"Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>"	
-    }
+    },
+
+  "custom/power": {
+    "format" : "⏻",
+    "on-click": "wleave"
+  }
 }

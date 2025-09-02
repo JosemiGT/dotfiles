@@ -24,7 +24,8 @@
 #idle_inhibitor,
 #window,
 #workspaces,
-#custom-archlogo {
+#custom-archlogo,
+#custom-power {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 6px;
@@ -33,7 +34,7 @@
 #custom-archlogo {
   font-size: 25px;
   background-color: #7DAFFF;
-  padding: 0px 5px;
+  padding: 0px 8px;
 
 }
 
@@ -138,4 +139,10 @@ label:focus {
 #idle_inhibitor.activated {
     background-color: #FFD66B;
     color: #0B1E38;
+}
+
+#custom-power {
+  font-size: 20px;
+  background-color: #3EC6C3;
+  padding: 0px 8px;
 }

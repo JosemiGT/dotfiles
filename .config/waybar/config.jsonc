@@ -23,6 +23,8 @@
 	"modules-right": [
         "tray",
         "custom/sep",
+        "custom/bluetooth",
+        "custom/sep",
         "network",
         "custom/sep",
         "pulseaudio",

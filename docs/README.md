@@ -1,12 +1,28 @@
-# Dotfiles
+# Mi sistema
+
+- Distro: Arch Linux
+- Window Manager: Hyprland
+- Terminal: Alacritty
+- Barra de estado: Waybar
+- Lanzador de aplicaciones: Wofi
+- Administrador de archivos: Thunar
+- Navegador web: ZenBrowser & Vivaldi
+- Administrador de notificaciones:
+- Administrador de fondos de pantalla: Waypaper
+- Visor de imágenes: Swappy
+- Reproductor multimedia: MPV
+- Capturas de pantalla: Grimblast
+- Editor de texto: Helix & VSCodium
+
+---
+
+## Dotfiles
 
 Este repositorio contiene mis configuraciones personales (**dotfiles**) gestionadas con un **bare Git repository**, siguiendo la filosofía planteada originalmente [aquí](https://news.ycombinator.com/item?id=11071754).
 
 Me permite mantener los archivos de configuración en `$HOME` y sincronizarlos sin usar enlaces simbólicos.
 
 En el enlace original se explica como iniciar un repositorio de este tipo desde cero, por lo que acontinuación sólo detallaré como replicar este repositorio y como usarlo.
-
----
 
 ## 💻 Instalación en una nueva máquina
 

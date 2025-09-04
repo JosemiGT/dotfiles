@@ -146,3 +146,8 @@ label:focus {
   background-color: #3EC6C3;
   padding: 0px 8px;
 }
+
+#custom-bluetooth {
+  padding: 0 5px;
+  font-size: large;
+}

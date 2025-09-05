@@ -5,13 +5,12 @@
 - Terminal: Alacritty
 - Barra de estado: Waybar
 - Lanzador de aplicaciones: Wofi
-- Administrador de archivos: Thunar
+- Administrador de archivos: Nautilus
 - Navegador web: ZenBrowser & Vivaldi
-- Administrador de notificaciones:
+- Administrador de notificaciones: Swaync
 - Administrador de fondos de pantalla: Waypaper
-- Visor de imágenes: Swappy
-- Reproductor multimedia: MPV
-- Capturas de pantalla: Grimblast
+- Capturas de pantalla: Hyprshot
+- Bloqueo de pantalla: Hyprlock
 - Editor de texto: Helix & VSCodium
 
 ---

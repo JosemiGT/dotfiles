@@ -1,0 +1,16 @@
+
+font-size = 14
+font-feature = calt
+font-feature = liga
+theme = Catppuccin Mocha
+window-decoration = false
+background-opacity = 0.90
+window-padding-x = 10
+window-padding-y = 10
+confirm-close-surface = false
+cursor-style = block
+cursor-style-blink = true
+mouse-hide-while-typing = true
+scrollback-limit = 10000
+copy-on-select = false
+shell-integration = zsh

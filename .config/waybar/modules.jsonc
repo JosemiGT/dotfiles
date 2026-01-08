@@ -81,7 +81,8 @@
 		"format-ethernet": "{ipaddr}/{cidr}",
 		"format-linked": "{ifname} (No IP)",
 		"format-disconnected": "󰖪",
-        "tooltip-format":"Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>"	
+    "tooltip-format":"Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",	
+    "on-click": "nm-connection-editor",
     },
 
     "bluetooth": {

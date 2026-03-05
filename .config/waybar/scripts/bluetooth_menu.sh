@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Lista de dispositivos conocidos
-devices=$(bluetoothctl devices | awk '{print $2 " " substr($0, index($0,$3))}')
+devices=$(echo "devices" | bluetoothctl | grep "Device" | awk '{print $2 " " substr($0, index($0,$3))}')
 
 # Menú con wofi
 choice=$(echo "$devices" | wofi --dmenu -p "Bluetooth:")

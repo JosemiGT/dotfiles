@@ -11,7 +11,7 @@
 	"modules-left": [
         "custom/archlogo",
         "custom/sep",
-        "hyprland/workspaces",
+        "ext/workspaces",
         "custom/sep",
         "idle_inhibitor"
     ],

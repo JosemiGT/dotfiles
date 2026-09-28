@@ -1,16 +1,21 @@
 {
-	"hyprland/workspaces": {
-        "format": "{id}",
+	"ext/workspaces": {
+        "format": "{name}: {icon} ",
         "on-click": "activate",
-        "disable-scroll": false,
-        "on-scroll-up": "hyprctl dispatch workspace e-1",
-        "on-scroll-down": "hyprctl dispatch workspace e+1",
-        "all-outputs": true,
-        "format-icons": {
-            "urgent": "●",
-            "active": "●",
-            "default": "●"
-		},
+        "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e+1\"})' ",
+        "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e-1\"})' ",
+        "all-outputs": false,
+        "ignore-hidden": false,
+          "format-icons": {
+            "1": "",
+            "2": " ",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "9": "",
+            "default": ""
+        },
         "sort-by-number": true
 	},
 
@@ -82,7 +87,7 @@
 		"format-linked": "{ifname} (No IP)",
 		"format-disconnected": "󰖪",
     "tooltip-format":"Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",	
-    "on-click": "nm-connection-editor",
+    "on-click": "nm-connection-editor"
     },
 
     "bluetooth": {

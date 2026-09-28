@@ -50,6 +50,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wlsunset -l 36.72 -L -4.42 -t 4000 -T 6500")
     hl.exec_cmd('gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"')
     hl.exec_cmd('gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"')
+    hl.exec_cmd("[workspace 1] " .. terminal)
+    hl.exec_cmd("[workspace 2 silent] " .. browser)
 end)
 
 -----------------------------
@@ -149,7 +151,7 @@ hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "a
 local primary_mon = "desc:LG Electronics LG ULTRAFINE 508NTPCJA560"
 local laptop_mon  = "eDP-1"
 
--- Monitor Principal (LG UltraFine): Espacios 1 al 5
+-- Monitor Principal (LG UltraFine): Espacios 1 al 7
 for i = 1, 5 do
     hl.workspace_rule({
         workspace = tostring(i),

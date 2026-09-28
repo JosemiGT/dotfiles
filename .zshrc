@@ -47,13 +47,6 @@ export LANG=es_ES.UTF-8
 export EDITOR=helix
 export LESS=-R
 
-# Node & FNM
-export PATH="$HOME/.local/share/fnm:$PATH"
-
-if command -v fnm >/dev/null 2>&1; then
-  eval "$(fnm env --use-on-cd --shell zsh 2>/dev/null)"
-fi
-
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
@@ -79,3 +72,5 @@ alias unziplife="$HOME/life/unzip-life.sh"
 # Powerlevel10k
 # ===============================
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+. "$HOME/.local/bin/env"

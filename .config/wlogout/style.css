@@ -1,0 +1,67 @@
+* {
+    background-image: none;
+    font-family: "Cascadia Code NF", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: none;
+    color: white;
+}
+
+/* Fondo de pantalla con velo oscuro y tono azul profundo */
+window {
+    background-color: rgba(10, 24, 40, 0.75);
+}
+
+button {
+    font-family: "Cascadia Code NF", monospace;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-color: rgba(18, 56, 92, 0.75);
+    border: 2px solid rgba(62, 198, 195, 0.35);
+    border-radius: 16px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Reducimos el tamaño de la etiqueta de texto que acompaña al icono */
+button label {
+    font-size: 14px;
+    color: #E6F1FF;
+}
+
+/* Hover general */
+button:hover,
+button:focus {
+    background-color: #1E3A5F;
+    border-color: #FFD66B;
+    outline-style: none;
+}
+
+button:hover label,
+button:focus label {
+    color: #FFD66B;
+}
+
+#lock {
+    background-image: image(url("icons/lock.svg"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.svg"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.svg"));
+}
+
+#logout {
+    background-image: image(url("icons/logout.svg"));
+}
+
+#suspend {
+    background-image: image(url("icons/bed.svg"));
+}
+
+#hibernate {
+    background-image: image(url("icons/clock-fading.svg"));
+}
